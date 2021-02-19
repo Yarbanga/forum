@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "LBK";
+    src: url("../google-font/LibreBaskerville-Regular.ttf");
+}
+
+
+/***************************************************** debut des styles pour  de la page d'accueil*************************************************************************************/
+
+.container-fluid {
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    font-family: 'LBK', serif;
+}
+
+.sou-content {
+    height: 100%;
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+
+.contenu {
+    height: 100%;
+    overflow: scroll;
+}
+
+.tr_list {
+    display: none;
+}
+
+.i-taille {
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+
+/*  cette classe permet le changement de la couleur en rouge lorsque on clique exemple sur apprenants */
+
+.list-group-item.active {
+    z-index: 2;
+    color: white;
+    background-color: rgb(226, 15, 15);
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+
+/* LES classe espacement sont utiliser pour l'ajustement des different  bloc du menu  */
+
+.i-espacement1 {
+    /* ce espacement intervient sur  la bare de recherche et les menu*/
+    padding: 0px;
+}
+
+.i-espacement2 {
+    /* ce espacement intervient sur le positionnement et ajustement  la bare de recherche */
+    margin-top: 15%;
+}
+
+.i-espacement3 {
+    /* ce espacement intervient sur les menu*/
+    padding-top: 40%;
+    text-align: center;
+}
+
+
+/*propriete bootstrap*/
+
+.i-conteneur {
+    height: 100%;
+}
+
+.imp {
+    display: none;
+}
+
+.i-copyr {
+    position: fixed;
+    bottom: 1%;
+    z-index: 100;
+    color: white;
+    padding-left: 1%;
+    font-size: 15px;
+}
+
+.i-navclass {
+    padding: 0;
+}
+
+nav a {
+    border-bottom: 2px solid white;
+    font-size: 25px;
+    border-bottom: 2px solid white;
+    height: 50px;
+    margin-top: 5px;
+    text-decoration: aliceblue;
+}
+
+
+/* les classe qui vont suivre  permettrons le traitement de la section de droite  */
+
+.i-section {
+    background-color: rgb(68, 8, 138);
+    width: 200px;
+    height: 300px;
+    color: rgb(104, 24, 24);
+}
+
+
+/***************************************************** FIN des styles pour  de la page d'accueil*************************************************************************************/
+
+
+/* enregistrement*/
+
+fieldset {
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+legend {
+    padding: 0;
+    width: inherit;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.form-control {
+    margin: 10px;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+
+/* card liste */
+
+.carte {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    color: white;
+    /* background-color: rgb(138, 14, 14); */
+}
+
+hr {
+    margin: 5px;
+    margin-left: 5px;
+    background-color: rgb(223, 33, 33);
+}
+
+.card-title {
+    margin-left: 5px;
+}
+
+.card {
+    box-shadow: 1px 1px 5px 0px black;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.im-d {
+    height: 300px;
+}
+
+.im-d img {
+    width: 100%;
+    height: inherit;
+}
+
+#btopen {
+    border: 0;
+    margin: 3px;
+    height: 30px;
+    width: 40px;
+}
+
+#btopen:hover {
+    background-color: rgb(223, 33, 33);
+    color: cornsilk;
+}
+
+

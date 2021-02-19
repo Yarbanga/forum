@@ -1,0 +1,45 @@
+
+@media screen and (max-width:992px){
+  body{
+    overflow: auto;
+}
+@media print{
+    aside{
+        display: none;
+      }
+}
+.bar{
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    background-color: black;
+    width: 100%;
+}
+.contenu{
+    overflow:visible;
+    height:auto;
+    padding-bottom: 50px;
+}
+aside{
+    position: fixed!important;
+    z-index: 1000;
+    left: 0;
+    height: 100%!important;
+    display: none;
+    top: 35px;
+}
+.sou-content{
+    height: auto;
+}
+.photo{
+    height: 300px;
+    margin: 12px;
+    }
+}
+@media screen and (max-width:768px){
+    .container,.input-3{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+  }

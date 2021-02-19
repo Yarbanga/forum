@@ -1,0 +1,29 @@
+/* @import url(bootstrap.min.css);
+@import url(style.css); */
+ /* aside{
+    display: none;
+  } */
+  /* .bg-dark {
+    background-color:rgb(255, 255, 255) !important;
+}
+.tr_list{
+display:block;
+}
+.tuteurbt{
+  display: none;
+}
+body{
+  overflow:auto;
+}
+.contenu{
+  overflow: visible;
+}
+#btopen{
+  display: none;
+}
+
+@media screen and (max-width:992px){
+    aside{
+        display: none;
+      }
+} */
