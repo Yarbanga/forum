@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="bootstrap.min.css">  
+    <link rel="stylesheet" href="style.css">
     <title>Liste</title>
 </head>
 <body>
@@ -17,7 +18,9 @@ while($message=$recupMessages->fetch()){
 ?> 
 
 <body>
-<div class="container-fluid">
+<fieldset>
+  <legend>La liste de  discussions</legend>
+  <div class="container-fluid">
     <div class="container gg-center " style="margin-left : 20px;">
       <div class="col-sm-12 mb-10  bg-Secondary ">
         <table>
@@ -29,14 +32,27 @@ while($message=$recupMessages->fetch()){
           while($message=$recupMessages->fetch()){
 
       ?> 
-
-          <div class="message" style="border: 1px solid black">
-          <h1><?= $message['pseudo']; ?> </h1>
-          <p><?= $message['message']; ?></p></td> 
-          <a href="supprimer.php?id=<?= $message['id']; ?>><button  class="text-white  style=" margin-bottom:10px;" type="submit">Supprimer</button></a>
-          <a href="../../commentaire"><button  class="text-white" style=" margin-bottom:10px;" type="submit">Commenter</button></a>
-          </div>
+<table id="example" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+  
+        <thead>
+            <tr class="col-sm-12 mb-10  bg-Secondary">
+                <th><h2>Pseudo</h2></th>
+                <th><h2>Messages</h2></th>
+                <th><h2>Commentaire</h2></th>
+                
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <div class="message" style="">
+                <td class="ml-5"><h1><?= $message['pseudo']; ?> </h1></td>
+                <td><p><?= $message['message']; ?></p></td> 
+                <td><a href="../../commentaire"><button  class="text-white btn btn-primary" style=" ;"type="submit">Commenter</button></a></td>
+            </div>
           </br>
+          </tr>
+        </tbody>
+          
       <?php 
 
       }
@@ -58,9 +74,8 @@ while($message=$recupMessages->fetch()){
         </table>
       
 
-</div>    
+</div>   
+</fieldset> 
+    </table>
 </body>
 </html>
-
- 
-  

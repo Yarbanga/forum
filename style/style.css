@@ -4,10 +4,11 @@
 }
 
 
-/***************************************************** debut des styles pour  de la page d'accueil*************************************************************************************/
+/**************************debut des styles pour  de la page d'accueil*************************************************************************************/
 
 .container-fluid {
     padding: 0;
+    margin-right: 50px;
 }
 
 html {
@@ -127,82 +128,3 @@ nav a {
 
 
 /***************************************************** FIN des styles pour  de la page d'accueil*************************************************************************************/
-
-
-/* enregistrement*/
-
-fieldset {
-    border: solid black 1px;
-    border-radius: 10px;
-}
-
-legend {
-    padding: 0;
-    width: inherit;
-    font-weight: bold;
-    font-size: 15px;
-    margin-left: 15px;
-}
-
-.form-control {
-    margin: 10px;
-}
-
-.row {
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
-}
-
-
-/* card liste */
-
-.carte {
-    margin-top: 20px;
-}
-
-.btn-primary {
-    color: white;
-    /* background-color: rgb(138, 14, 14); */
-}
-
-hr {
-    margin: 5px;
-    margin-left: 5px;
-    background-color: rgb(223, 33, 33);
-}
-
-.card-title {
-    margin-left: 5px;
-}
-
-.card {
-    box-shadow: 1px 1px 5px 0px black;
-}
-
-.card-body {
-    background-color: white;
-}
-
-.im-d {
-    height: 300px;
-}
-
-.im-d img {
-    width: 100%;
-    height: inherit;
-}
-
-#btopen {
-    border: 0;
-    margin: 3px;
-    height: 30px;
-    width: 40px;
-}
-
-#btopen:hover {
-    background-color: rgb(223, 33, 33);
-    color: cornsilk;
-}
-
-

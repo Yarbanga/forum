@@ -1,25 +1,26 @@
 <?php 
 
-///session_start();
-//if($_SESSION['mdp']){
-//	header('Location:connection.php');
-//}
+if(session_status()==PHP_SESSION_NONE){
+  session_start();
+}
 
 
 ?>
-
-
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-widt0
+    h, initial-scale=1.0">
     <title>forum</title>
     <link rel="stylesheet" href="style/bootstrap.min.css" >
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="discussion/themes/default/css/style2.css">
+
+    
    
 </head>
 <?php 
@@ -39,51 +40,42 @@ if(isset($_GET["page"])){
                 <aside class=" col-lg-2 bg-dark border border-light aside  i-taille i-espacement1 ">
                 <div  class=" bg-light"> <img class="img-fluid" src="imgsite/images.png" alt=""></div>
 
-                          <div  class="d-flex justify-content-center"><input type="search" id="rech" class="i-espacement2 form-control" placeholder="       Recherche..."></div>  
-                                <a class=" list-group-item list-group-item-action <?php if ($page=="discussion/index.php") {
-                                    echo 'active';
-                                    }  ?>" id="list-home-list"  href="discussion/index.php" role="tab" aria-controls="ajouter" class="i-color">Discussion
-                                 </a> 
-                          
-
+                          <div  class="d-flex justify-content-center"><input type="search" id="rech" class="i-espacement2 form-control" placeholder="Recherche..."></div>  
+                                
                            <div  class="i-espacement3">
                                <nav class=" i-navclass list-group bg-light" id="list-tab" role="tablist">
                                     
                                      
                                     <a class=" list-group-item list-group-item-action <?php if ($page=="") {
                                         echo 'active';
-                                        }  ?>" id="list-home-list"  href="" role="tab" aria-controls="ajouter" class="i-color">Ajouter
+                                        }  ?>" id="list-home-list"  href="" role="tab" aria-controls="ajouter" class="up-iti-color">Ajouter
                                     </a> 
 
-                                     <a class="list-group-item list-group-item-action <?php if ($page=="list") {
+                                     <a class="list-group-item list-groem-action <?php if ($page=="index") {
                                           echo 'active';
-                                          }  ?>" id="list-profile-list"   href="" role="tab" aria-controls="#">Supprimer
+                                          }  ?>" id="list-profile-list"href="contact.php" role="tab" aria-controls="index">Contact
                                     </a>    
-                                    
-                                    
                            
                                </nav>
                                        
-                            </div>
-                 
-       
+                            </div>      
                         <div class="i-copyr d-flex justify-content-center"> Copyrigh 2020</div>
 
-                 </aside>      
-               
+                 </aside>
+
                  <div class="contenu col-lg-10 bg-light border border-light  " id="cont" >
                  <?php 
                  
                 switch($page){
-                case "enregistrement":
-                        include("includes/enregistrement.php");
+                case "index":
+                        include("contact.php");
                     break;
                 case "list":
-                    echo"<style>.imp{display:inline;}</style>";
-                        include("includes/list.php");
+                    //echo"<style></style>";
+                        include("discussion/liste/liste.php");
                     break;
                 default:
-                //include("includes/liste.php");
+                include("discussion/index.php");
                 break;
             }
         

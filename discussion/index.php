@@ -11,7 +11,7 @@ if(isset($_POST['valider'])){
      
      $insererMessage = $bdd->prepare('INSERT INTO messages(pseudo, message) VALUES (? ,?)');
      $insererMessage->execute(array($pseudo, $message));
-     header("location:liste/liste.php");
+     header("location:discussion/liste/liste.php");
   }else{
     echo " Veuillez completer tous les champs........?";
   }
@@ -36,34 +36,13 @@ if(isset($_POST['valider'])){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>forum</title>
 </head>
-<div class="headerfixedar">
-   <div class="row headerfixedContent">
-      <div class="col-lg-12">
-          <div class=" pullLeft" style="margin-top: 5px;">
-              <a class="headerlogotext" href="index.php"title="Forum.com"><img class="headerlogoImage" src="themes/default/images/logo.png"> Forum</a>
-          </div>
-          <div class="pullRight">
-              <a class="btn btn-primary themeButton" href="index.php?lagout"title="Forum.com">Lagout</a>
-          </div>
-      </div>         
-    </div>
-</div>
-
 <body>
-<!--debut de mon forum-->
-<div class="container ">
-  <div class="row">
-    <div class="col-lg-12 peginationBar forumModule forumMargin">
-      <a href="#">Home</a> <!--<i class="fa fa-chevron-circle-right peginationArrow"><a href="#">Category</a><i class="fa fa-chevron-circle-right peginationArrow"><a href="#">Discussion</a></i>-->
-    </div>
-  </div>     
-
 
   <div id="Category_1" class="row forumModule forumMargin">
     <a href="#" onclick="showDiscussions( 1)";>
         <div class="col-lg-12 columpad">
           <div class="pullLeft">
-             <h1>Catecory Name </h1>
+             <h1>Dev Forum</h1>
           </div>
 
               

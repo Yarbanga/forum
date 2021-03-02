@@ -50,7 +50,7 @@ if(isset($_POST['valider'])){
                                 <div class="form-group mb-3"> <input id="inputPassword" type="password" name="password" placeholder="Mot de Passe" class="form-control rounded-pill border-0 shadow-sm px-4 text-danger"><br> </div>
                                 <div class="custom-control custom-checkbox mb-3"> <input id="customCheck1" type="checkbox" checked class="custom-control-input" name="valider"> </div> <button type="submit" class="btn btn-danger btn-block text-uppercase mb-2 rounded-pill shadow-sm" name="valider">Valider</button>
                                 <div class="text-center d-flex justify-content-between mt-4">
-                                <p> OU &nbsp<a href=" " class="font-italic text-muted"> <u>Creer un compte</u></a></p>
+                                <p> OU &nbsp<a href="inscription.php " class="font-italic text-muted"> <u>Creer un compte</u></a></p>
                                 </div>
                             </form>
                         </div>
